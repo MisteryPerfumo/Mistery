@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  line-height: normal;
+}
+
+:root {
+  /* fonts */
+  --title-footnote: "Encode Sans";
+  --font-arsenal: Arsenal;
+  --font-cormorant-garamond: "Cormorant Garamond";
+  --callout-bold: "SF Pro Text";
+
+  /* font sizes */
+  --title-footnote-size: 12px;
+  --font-size-6xs: 7px;
+  --callout-bold-size: 16px;
+  --title-size: 20px;
+  --font-size-5xs: 8px;
+  --font-size-sm: 14px;
+  --font-size-3xs: 10px;
+  --font-size-2xs: 11px;
+
+  /* Colors */
+  --color-white: #fff;
+  --footnote-bg-color: #e9d0ec;
+  --color-slateblue: #5434b7;
+  --label-color-light-primary: #000;
+  --color-red: #fa1e1e;
+  --header-bg-color: #c9a1ce;
+  --color-midnightblue: #4c2882;
+  --color-gray: #222728;
+
+  /* Gaps */
+  --gap-2xl: 21px;
+  --gap-8xs: 5px;
+  --gap-3xs: 10px;
+  --gap-11xs: 2px;
+  --gap-10xs: 3px;
+  --gap-9xs: 4px;
+  --gap-7xl: 26px;
+  --gap-11xl: 30px;
+  --gap-xl: 20px;
+  --gap-5xs: 8px;
+  --gap-12xs: 1px;
+  --gap-37xl: 56px;
+
+  /* Paddings */
+  --padding-sm: 14px;
+  --padding-mid: 17px;
+  --padding-base: 16px;
+  --padding-10xs: 3px;
+  --padding-9xs: 4px;
+  --padding-smi: 13px;
+  --padding-11xs: 2px;
+  --padding-7xs: 6px;
+  --padding-5xs: 8px;
+
+  /* Border radiuses */
+  --br-11xl: 30px;
+  --br-5xs: 8px;
+  --br-61xl: 80px;
+  --br-5xl: 24px;
+  --br-xl: 20px;
+}
