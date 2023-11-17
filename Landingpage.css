@@ -1,7 +1,7 @@
 .notch-icon {
-  position: absolute;
+  position: absolute; /*định vị trí của element dựa trên vị trí của element cha gần nhất, có thể làm ảnh hưởng tới các element xung quanh.*/
   top: 0;
-  left: calc(50% - 86px);
+  left: calc(50% - 86px); /* Đặt phần trái của phần tử là giá trị được tính toán để đặt nó chính giữa theo chiều ngang, 86px là một nửa của chiều rộng (172px) của phần tử */
   width: 172px;
   height: 32px;
 }
@@ -11,9 +11,9 @@
   width: 54px;
 }
 .time {
-  top: 1px;
+  top: 1px; /* Đặt khoảng cách từ phía trên của phần tử đến phía trên của phần tử cha là 1 pixel */
   left: 0;
-  letter-spacing: -0.32px;
+  letter-spacing: -0.32px; /* Đặt khoảng cách giữa các ký tự trong văn bản là -0.32 pixel */
   line-height: 21px;
   font-weight: 600;
   display: inline-block;
@@ -40,12 +40,12 @@
   height: 13px;
 }
 .statusbar {
-  position: relative;
+  position: relative; /*định vị trí của element tương đối so với chính vị trí ban đầu của nó, không ảnh hưởng tới các element xung quanh*/
   border-radius: var(--br-11xl);
   width: 390px;
   height: 47px;
-  overflow: hidden;
-  flex-shrink: 0;
+  overflow: hidden; /* Ẩn nội dung vượt quá phần tử cha */
+  flex-shrink: 0; /*Ngăn không cho element bị thu hẹp khi container bị thiếu không gian*/
 }
 .mistery {
   position: absolute;
@@ -73,7 +73,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  gap: var(--gap-xl);
+  gap: var(--gap-xl); /* Đặt khoảng cách giữa các item con là giá trị của biến CSS "--gap-xl" */
   font-size: var(--font-size-2xs);
   color: var(--color-midnightblue);
   font-family: var(--title-footnote);
@@ -92,8 +92,8 @@
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  padding: 0 var(--padding-5xs);
-  box-sizing: border-box;
+  padding: 0 var(--padding-5xs); /* Thêm padding vào item con, với giá trị của biến CSS "--padding-5xs" ở phía trái và phải */
+  box-sizing: border-box; /* Sử dụng box-sizing để đảm bảo rằng padding và border không tăng kích thước của phần tử */
   gap: var(--gap-11xl);
 }
 .menu-bar {
@@ -150,7 +150,7 @@
 }
 .bn-mun-tm-container {
   position: relative;
-  line-height: 136.25%;
+  line-height: 136.25%; /* Đặt chiều cao của dòng văn bản là 136.25% của kích thước phông chữ hiện tại */
   display: inline-block;
   width: 175px;
   height: 32px;
@@ -174,7 +174,7 @@
   align-items: center;
   justify-content: center;
   padding: var(--padding-11xs) var(--padding-7xs);
-  cursor: pointer;
+  cursor: pointer; /* Đặt con trỏ chuột thành mũi tên khi di chuột qua phần tử */
   text-align: left;
   font-size: 15px;
   color: var(--color-white);
@@ -289,7 +289,7 @@
   left: 30.9px;
   width: 139.2px;
   height: 162.8px;
-  object-fit: cover;
+  object-fit: cover; /* Đảm bảo nội dung (hình ảnh) sẽ điều chỉnh kích thước để lấp đầy toàn bộ kích thước của phần tử mà không làm biến đổi tỷ lệ khung hình */
 }
 .p {
   margin: 0;
@@ -569,7 +569,7 @@
   flex-direction: row;
   align-items: flex-start;
   padding: 0 5px;
-  box-sizing: border-box;
+  box-sizing: border-box; /* Sử dụng box-sizing để đảm bảo rằng padding và border không tăng kích thước của phần tử */
   gap: var(--gap-3xs);
   text-align: center;
   font-size: var(--callout-bold-size);
@@ -621,7 +621,7 @@
   border-radius: 50%;
   width: 65px;
   height: 66px;
-  object-fit: cover;
+  object-fit: cover;/* Đảm bảo nội dung (hình ảnh) sẽ điều chỉnh kích thước để lấp đầy toàn bộ kích thước của phần tử mà không làm biến đổi tỷ lệ khung hình */
 }
 .c-nhn-mnh,
 .ninh-dng-lan {
@@ -646,10 +646,10 @@
 .group {
   width: 350px;
   height: 180px;
-  overflow-x: auto;
+  overflow-x: auto; /* Cho phép cuộn ngang nếu nội dung vượt quá kích thước của phần tử */
   flex-shrink: 0;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: flex-start; /* Căn giữa các item con theo chiều dọc */
   gap: var(--gap-3xs);
   font-size: var(--callout-bold-size);
   color: var(--label-color-light-primary);
@@ -727,8 +727,8 @@
   box-sizing: border-box;
 }
 .h-20h {
-  margin-block-start: 0;
-  margin-block-end: 2px;
+  margin-block-start: 0; /* Đặt khoảng cách lề trên của phần tử là 0 */
+  margin-block-end: 2px; /* Đặt khoảng cách lề dưới của phần tử là 2 pixel */
 }
 .h-20h-container {
   position: relative;
