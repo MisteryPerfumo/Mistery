@@ -1,23 +1,23 @@
 .sn-phm3 {
-  position: relative;
+  position: relative; /*Thiết lập vị trí của một phần tử theo một cách tương đối*/
   font-weight: 600;
 }
 .frame-child3 {
   position: relative;
   width: 109px;
   height: 144px;
-  object-fit: cover;
+  object-fit: cover; /*Điều chỉnh cách hiển thị hình ảnh hoặc video*/
 }
 .le-labo-another1,
 .p16 {
-  margin: 0;
+  margin: 0; /*Không có khoảng cách nào giữa phần tử và các phần tử khác*/
 }
 .p16 {
-  text-decoration: line-through;
+  text-decoration: line-through; /*Gạch ngang văn bản*/
 }
 .libre-edp-90ml-container8 {
   position: relative;
-  display: inline-block;
+  display: inline-block; /*Phần tử sẽ hiển thị như một khối và có thể được đặt trên cùng một dòng với các phần tử khác*/
   width: 173px;
   height: 84px;
   flex-shrink: 0;
@@ -32,10 +32,10 @@
   top: 0;
   left: 0;
   display: flex;
-  flex-direction: row;
+  flex-direction: row; /*Các phần tử con sẽ được xếp theo hướng ngang từ trái sang phải*/
   align-items: center;
   justify-content: center;
-  gap: var(--gap-37xl);
+  gap: var(--gap-37xl); /*Khoảng cách giữa các phần tử con sẽ được thiết lập bằng giá trị của biến (--gap-37xl)*/
 }
 .div17 {
   position: relative;
@@ -77,12 +77,12 @@
   font-family: var(--font-arsenal);
 }
 .sn-phm2 {
-  overflow: hidden;
+  overflow: hidden; /*Bất kỳ nội dung nào vượt quá kích thước của phần tử đó sẽ bị ẩn đi và không hiển thị trên trang web*/
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  padding: var(--padding-smi) 0;
+  padding: var(--padding-smi) 0; /*Phần tử sẽ có padding theo chiều dọc là 0 và padding theo chiều ngang sẽ được đặt bằng giá trị của biến (--padding-smi)*/
   gap: var(--gap-7xl);
 }
 .lin-h14 {
@@ -98,14 +98,14 @@
   height: 20px;
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: flex-start; /*các phần tử con sẽ được căn chỉnh theo đường chéo trên cùng của container flex*/
   justify-content: flex-start;
   padding: var(--padding-9xs) 0;
-  box-sizing: border-box;
+  box-sizing: border-box; /*Kích thước của phần tử sẽ được tính toán bằng cách bao gồm cả padding và border trong kích thước tổng thể của phần tử*/
 }
 .a-phm-ngc2 {
   position: relative;
-  line-height: 10px;
+  line-height: 10px; /*hiều cao của mỗi dòng văn bản sẽ là 10px*/
   display: inline-block;
   width: 91px;
   height: 20px;
@@ -135,8 +135,8 @@
   box-sizing: border-box;
 }
 .h-20h3 {
-  margin-block-start: 0;
-  margin-block-end: 2px;
+  margin-block-start: 0; /*Margin bắt đầu của phần tử sẽ được đặt là 0*/
+  margin-block-end: 2px; /*Margin kết thúc của phần tử sẽ được đặt là 2px*/
 }
 .h-20h-container2 {
   position: relative;
@@ -155,12 +155,12 @@
 .time4 {
   width: 99px;
   flex-direction: row;
-  align-items: center;
+  align-items: center; /*Các phần tử con sẽ được đặt ở giữa container flex*/
   gap: var(--gap-9xs);
 }
 .lin-h13,
 .lin-h15 {
-  flex-direction: column;
+  flex-direction: column; /*Các phần tử con sẽ được sắp xếp theo hướng dọc, từ trên xuống dưới*/
   align-items: flex-start;
 }
 .lin-h15 {
@@ -213,7 +213,7 @@
 .social5 {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: flex-start; /*Các phần tử con sẽ được đặt ở vị trí trên cùng của container flex*/
   justify-content: center;
   gap: var(--gap-3xs);
 }
@@ -235,7 +235,7 @@
   flex-direction: row;
   padding: var(--padding-sm) var(--padding-mid) var(--padding-sm)
     var(--padding-base);
-  box-sizing: border-box;
+  box-sizing: border-box; /*Kích thước tổng thể của phần tử sẽ không bị tăng lên bởi padding và border*/
   gap: var(--gap-2xl);
   font-size: var(--title-footnote-size);
 }
@@ -256,7 +256,7 @@
 .hero-icon {
   top: 85px;
   height: 197px;
-  object-fit: cover;
+  object-fit: cover; /*Hình ảnh hoặc video sẽ được co giãn để phù hợp với kích thước của phần tử*/
 }
 .mistery7 {
   position: absolute;
@@ -269,7 +269,7 @@
 .logo2 {
   position: relative;
   border-radius: var(--br-5xs);
-  background-color: var(--color-gray);
+  background-color: var(--color-gray); /*Màu nền của phần tử sẽ được đặt là màu xám*/
   width: 88px;
   height: 24px;
 }
@@ -303,7 +303,7 @@
 .notch-icon2 {
   position: absolute;
   top: 0;
-  left: calc(50% - 86px);
+  left: calc(50% - 86px);/*Phần tử sẽ được đặt ở giữa phía trái của container cha*/
   width: 172px;
   height: 32px;
 }
@@ -311,7 +311,7 @@
   position: absolute;
   top: 1px;
   left: 0;
-  letter-spacing: -0.32px;
+  letter-spacing: -0.32px; /*khoảng cách giữa các ký tự trong văn bản sẽ được thu nhỏ đi 0.32px*/
   line-height: 21px;
   font-weight: 600;
   display: inline-block;
@@ -350,7 +350,7 @@
   top: 0;
   height: 47px;
   overflow: hidden;
-  text-align: center;
+  text-align: center; /*văn bản trong phần tử sẽ được căn giữa theo chiều ngang*/
   font-size: var(--callout-bold-size);
   color: var(--label-color-light-primary);
   font-family: var(--callout-bold);
@@ -376,7 +376,7 @@
   background-color: var(--color-white);
   width: 100%;
   height: 844px;
-  overflow-y: auto;
+  overflow-y: auto; /*Một thanh cuộn sẽ được hiển thị khi nội dung trong phần tử vượt quá kích thước của phần tử theo chiều dọc*/
   text-align: left;
   font-size: var(--title-size);
   color: var(--color-slateblue);
