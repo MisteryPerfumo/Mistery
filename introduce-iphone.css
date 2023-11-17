@@ -1,18 +1,19 @@
+/*định dạng cho class”notch-icon1”*/
 .notch-icon1 {
   position: absolute;
   top: 0;
-  left: calc(50% - 86px);
+  left: calc(50% - 86px); /*đặt vị trí ngang của phần tử sao cho nó nằm ở giữa chiều ngang và dịch chuyển sang trái 86 pixels*/
   width: 172px;
   height: 32px;
 }
 .time2 {
-  position: absolute;
+  position: absolute; /*xác định vị trí tuyệt đối*/
   top: 1px;
   left: 0;
-  letter-spacing: -0.32px;
-  line-height: 21px;
-  font-weight: 600;
-  display: inline-block;
+  letter-spacing: -0.32px; /*xác định khoảng cách ngang giữa các ký tự trong văn bản, -0.32px;, cho phép thu hẹp khoảng cách giữa các ký tự*/
+  line-height: 21px; /*khoảng cách giữa các dòng trong văn bản*/
+  font-weight: 600; /*xác định độ đậm của một font chữ */
+  display: inline-block; /*phần tử sẽ được hiển thị trênnhư một khối và có thể được đặt trên cùng một dòng với các phần tử khác*/
   width: 54px;
   height: 20px;
 }
@@ -25,7 +26,7 @@
 .statusbar-time1 {
   top: 0;
   left: calc(50% - 27px);
-  border-radius: var(--br-5xl);
+  border-radius: var(--br-5xl); /*xác định đường cong góc của các góc của một phần tử*/
 }
 .left-side1 {
   top: 14px;
@@ -42,8 +43,8 @@
   position: relative;
   width: 390px;
   height: 47px;
-  overflow: hidden;
-  flex-shrink: 0;
+  overflow: hidden; /*ẩn nội dung nào vượt ra khỏi khu vực hiển thị*/
+  flex-shrink: 0; /*phần tử không co giãn và giữ nguyên kích thước ban đầu của nó*/
   text-align: center;
   font-size: var(--callout-bold-size);
   color: var(--label-color-light-primary);
@@ -71,9 +72,9 @@
 .trang-ch-container {
   width: 243px;
   display: flex;
-  flex-direction: row;
+  flex-direction: row; /*phần tử con sẽ được sắp xếp theo chiều ngang từ trái sang phải*/
   align-items: center;
-  justify-content: flex-start;
+  justify-content: flex-start; /*các phần tử con sẽ được xếp chồng lên nhau từ bên trái và không có khoảng cách giữa chúng trên trục chính*/
   gap: var(--gap-xl);
   font-size: var(--font-size-2xs);
   color: var(--color-midnightblue);
@@ -94,7 +95,7 @@
   align-items: center;
   justify-content: flex-start;
   padding: 0 var(--padding-5xs);
-  box-sizing: border-box;
+  box-sizing: border-box; /*kích thước của phần tử bao gồm cả nội dung (content), padding, và border, và không bị thay đổi khi thay đổi giá trị của padding và border*/
   gap: var(--gap-11xl);
 }
 .menubar {
@@ -113,7 +114,7 @@
   max-width: 100%;
   overflow: hidden;
   max-height: 100%;
-  object-fit: cover;
+  object-fit: cover; /*điều chỉnh để hình ảnh hoặc icon hoàn toàn phủ lên phần tử mục tiêu mà không bị biến dạng*/
 }
 .mistery5 {
   position: absolute;
@@ -136,8 +137,8 @@
 }
 .slogan {
   position: absolute;
-  height: calc(100% - 161px);
-  width: calc(100% - 179px);
+  height: calc(100% - 161px); /*chiều cao được tính toán bằng cách trừ đi 161px từ 100% của chiều cao của phần tử cha*/
+  width: calc(100% - 179px); /*chiều rộng được tính toán bằng cách trừ đi 179px từ 100% của chiều rộng của phần tử cha*/
   top: 11px;
   right: 147px;
   bottom: 150px;
@@ -150,7 +151,7 @@
   height: 246px;
 }
 .frame-child {
-  border-top: 0.5px solid var(--color-slateblue);
+  border-top: 0.5px solid var(--color-slateblue); /*định dạng đường viền phía trên, đường viền sẽ có độ dày là 0.5px, kiểu đường viền là solid (đường liền) và màu sắc của đường viền sẽ được lấy từ biến CSS --color-slateblue*/
   box-sizing: border-box;
   width: 173.5px;
   height: 0.5px;
@@ -273,14 +274,14 @@
 }
 .cht-lng-cao-cp-parent {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /*các phần tử con sẽ được sắp xếp theo hướng dọc từ trên xuống dưới*/
   align-items: center;
   justify-content: center;
 }
 .bo-v-mi {
   position: relative;
   line-height: 12px;
-  text-transform: capitalize;
+  text-transform: capitalize; /*chuyển đổi chữ cái đầu tiên của mỗi từ trong một đoạn văn bản thành chữ in hoa, trong khi các chữ cái còn lại được giữ nguyên chữ thường*/
   display: inline-block;
   width: 165px;
   height: 24px;
@@ -294,7 +295,7 @@
   justify-content: center;
 }
 .bo-v-mi-trng-parent {
-  padding: 0 0 77px;
+  padding: 0 0 77px; /*giá trị padding được xác định cho các phần tử theo thứ tự từ trái sang phải: padding trên (top), padding trái và phải (left và right), và padding dưới (bottom)*/
 }
 .frame-group {
   gap: 35px;
@@ -318,7 +319,7 @@
   justify-content: flex-start;
 }
 .frame-div {
-  padding: 81px 0 0;
+  padding: 81px 0 0; /*giá trị padding trên là 81px, và padding trái/phải và padding dưới đều là 0*/
   gap: 31px;
 }
 .frame-div,
@@ -392,8 +393,8 @@
 }
 .sn-phm-tt-container {
   position: relative;
-  letter-spacing: 0.02em;
-  line-height: 120%;
+  letter-spacing: 0.02em; /*xác định khoảng cách giữa các chữ cái sẽ là 0.02 lần kích thước của một chữ cái*/
+  line-height: 120%; /*xác định rằng chiều cao dòng sẽ là 120% của kích thước phông chữ được áp dụng*/
   display: inline-block;
   width: 310px;
   height: 43px;
@@ -641,8 +642,8 @@
   box-sizing: border-box;
 }
 .h-20h2 {
-  margin-block-start: 0;
-  margin-block-end: 2px;
+  margin-block-start: 0; /*không có khoảng cách (margin) ở phía bên trái (hoặc phía trên) của phần tử so với các phần tử khác*/
+  margin-block-end: 2px; /*phần tử sẽ có một khoảng cách (margin) 2px ở phía bên phải (hoặc phía dưới) của nó*/
 }
 .h-20h-container1 {
   position: relative;
@@ -734,6 +735,7 @@
   align-items: flex-start;
   justify-content: flex-start;
 }
+/*định dạng footer*/
 .footer1 {
   background-color: var(--footnote-bg-color);
   height: 110px;
@@ -758,7 +760,7 @@
   background-color: var(--color-white);
   width: 100%;
   height: 844px;
-  overflow-y: auto;
+  overflow-y: auto; /*tự động hiển thị thanh cuộn dọc khi nội dung vượt quá kích thước của phần tử. Nếu nội dung không vượt quá kích thước, không có thanh cuộn sẽ được hiển thị*/
   text-align: left;
   font-size: var(--title-size);
   color: var(--color-slateblue);
