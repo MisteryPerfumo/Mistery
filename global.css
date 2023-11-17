@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  line-height: normal;
+  line-height: normal;/*Đặt chiều cao văn bản*/
 }
 
 :root {
